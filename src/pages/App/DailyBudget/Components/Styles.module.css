@@ -1,0 +1,29 @@
+.dailybudget-amount-input {
+  color: #555;
+  margin: 0.1em;
+  width: 100%;
+  text-align: center;
+  min-height: 5em;
+}
+
+.dailybudget-amount-input input {
+  font-size: 4.5em;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  line-height: 1em;
+}
+
+.dailybudget-amount-input input:focus {
+  outline: none;
+}
+
+.dailybudget-amount-input .symbol {
+  font-size: 2.5em;
+  font-weight: 600;
+  vertical-align: top;
+  line-height: 1.7em;
+}

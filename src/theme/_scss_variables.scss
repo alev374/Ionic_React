@@ -1,0 +1,125 @@
+// #######################################
+// Color system
+// #######################################
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$nextpay-blue: #448aff;
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #eb5757;
+$orange: #fd7e14;
+$yellow: #ffce00;
+$green: #219653;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$primary: $nextpay-blue;
+$primary-shade: #3750c9;
+$primary-tint: lighten($primary, 5%);
+
+$secondary: #607d8b;
+$secondary-shade: darken($secondary, 5%);
+$secondary-tint: lighten($secondary, 5%);
+
+$tertiary: #7044ff;
+$tertiary-shade: darken($tertiary, 5%);
+$tertiary-tint: lighten($tertiary, 5%);
+
+$success: $green;
+$success-shade: darken($success, 5%);
+$success-tint: lighten($success, 5%);
+
+$info: $cyan;
+$info-shade: darken($info, 5%);
+$info-tint: lighten($info, 5%);
+
+$warning: $yellow;
+$warning-shade: darken($warning, 5%);
+$warning-tint: lighten($warning, 5%);
+
+$danger: $red;
+$danger-shade: darken($danger, 5%);
+$danger-tint: lighten($danger, 5%);
+
+$light: #f4f5f8;
+$light-shade: darken($light, 5%);
+$light-tint: lighten($light, 5%);
+
+$dark: #212121;
+$dark-shade: darken($dark, 5%);
+$dark-tint: lighten($dark, 5%);
+
+$medium: #989aa2;
+$medium-shade: darken($medium, 5%);
+$medium-tint: lighten($medium, 5%);
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "primary-shade": $primary-shade,
+    "primary-tint": $primary-tint,
+    "secondary": $secondary,
+    "secondary-shade": $secondary-shade,
+    "secondary-tint": $secondary-tint,
+    "tertiary": $tertiary,
+    "tertiary-shade": $tertiary-shade,
+    "tertiary-tint": $tertiary-tint,
+    "success": $success,
+    "success-shade": $success-shade,
+    "success-tint": $success-tint,
+    "info": $info,
+    "info-shade": $info-shade,
+    "info-tint": $info-tint,
+    "warning": $warning,
+    "warning-shade": $warning-shade,
+    "warning-tint": $warning-tint,
+    "danger": $danger,
+    "danger-shade": $danger-shade,
+    "danger-tint": $danger-tint,
+    "light": $light,
+    "light-shade": $light-shade,
+    "light-tint": $light-tint,
+    "dark": $dark,
+    "dark-shade": $dark-shade,
+    "dark-tint": $dark-tint,
+    "medium": $medium,
+    "medium-shade": $medium-shade,
+    "medium-tint": $medium-tint
+  ),
+  $theme-colors
+);
+
+// #######################################
+// Spacing - margins and paddings
+// #######################################
+$spacer: 1rem;
+
+// #######################################
+// Typography
+// #######################################
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif;
+// stylelint-enable value-keyword-case
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * 0.875;

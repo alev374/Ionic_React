@@ -1,0 +1,100 @@
+/* NextPay Theme 
+// This is based from the Figma File ([NP] MVP_V2)
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-sans-serif !important;
+}
+
+p {
+  font-family: $font-family-sans-serif;
+}
+
+section {
+  padding: 0 $spacer;
+}
+
+form {
+  margin: 40px 0;
+}
+
+.MuiInputLabel-shrink {
+  background-color: white;
+  padding: 0 5px !important;
+  margin-left: -5px;
+}
+
+ion-button {
+  margin: 0;
+}
+
+.md ion-button {
+  --border-radius: 5px;
+  --box-shadow: none;
+  --border-width: thin;
+  --border-style: solid;
+}
+
+ion-button.height-increase {
+  height: 44px;
+}
+
+ion-button[fill="outline"].height-increase {
+  height: 42px;
+}
+
+ion-button[fill="outline"] {
+  --color: var(--ion-color-primary);
+}
+
+ion-button[fill="clear"] {
+  --border-width: 0;
+  /* --padding-top: 16px;
+  --padding-bottom: 16px; */
+}
+
+ion-grid {
+  --ion-grid-padding: 0;
+}
+
+ion-col {
+  --ion-grid-column-padding: 0;
+}
+
+ion-progress-bar {
+  --progress-background: cyan;
+  --buffer-background: white;
+}
+
+.footer-md:before {
+  height: 0;
+}
+
+.footer-ios ion-toolbar:first-child {
+  --border-width: 0;
+}
+
+.bg-warning {
+  background-color: #f2994a !important;
+}
+
+/* Margin CSS Utilities */
+.ml-1 {
+  margin-left: 4px;
+}
+
+.mr-1 {
+  margin-right: 4px;
+}
+
+.modal-medium {
+  .modal-wrapper {
+    height: 35%;
+    width: 80%;
+  }
+}

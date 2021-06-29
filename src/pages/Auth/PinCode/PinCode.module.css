@@ -1,0 +1,77 @@
+/* #verify-form {
+  margin: 150px 16px;
+} */
+
+#heading {
+  /* margin-top: 32px;
+  margin-bottom: 32px; */
+  height: 10em;
+}
+
+#heading * {
+  padding: 0;
+  padding-bottom: 8px;
+  margin: 0;
+  text-align: center;
+}
+
+.token-input-container {
+  font-size: 3.2em;
+  text-align: center;
+  padding: 0 2em;
+  margin-bottom: 0.3em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.token-input {
+  text-align: center;
+}
+
+.pin-info {
+  height: 3.5em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.retry {
+}
+
+.error {
+  color: var(--ion-color-danger);
+  margin-bottom: 8px;
+}
+
+.notice {
+  margin-bottom: 8px;
+}
+
+.numpad {
+  margin: 32px 0;
+}
+
+/* 
+  PIN SETUP COMPLETE
+*/
+.section-white {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.middle-position {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 50%;
+  width: 100%;
+  padding: 0 16px;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+}
+
+.checkmark {
+  color: var(--ion-color-success);
+  font-size: 1.5em !important;
+  margin-bottom: 25px;
+}

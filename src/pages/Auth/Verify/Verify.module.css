@@ -1,0 +1,48 @@
+/* #verify-form {
+  margin: 150px 16px;
+} */
+
+#heading {
+  /* margin-top: 32px;
+  margin-bottom: 32px; */
+}
+
+#heading * {
+  padding: 0;
+  padding-bottom: 8px;
+  margin: 0;
+  text-align: center;
+}
+
+.token-input-container {
+  font-size: 3.2em;
+  text-align: center;
+  padding: 0 1em;
+  margin-bottom: 0.3em;
+}
+
+.token-input {
+  text-align: center;
+}
+
+.pin-info {
+  height: 3.5em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.resend {
+}
+
+.error {
+  color: var(--ion-color-danger);
+  margin-bottom: 8px;
+}
+
+.notice {
+  margin-bottom: 8px;
+}
+
+.numpad {
+  margin: 32px 0;
+}

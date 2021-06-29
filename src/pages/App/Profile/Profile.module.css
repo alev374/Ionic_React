@@ -1,0 +1,8 @@
+#profile-photo {
+  border-radius: 100%;
+  width: 6em;
+  height: 6em;
+  background-color: #ccc;
+  margin: auto;
+  margin-bottom: 1.3em;
+}

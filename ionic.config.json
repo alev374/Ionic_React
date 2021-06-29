@@ -1,0 +1,8 @@
+{
+  "name": "nextpay",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "63a5d992"
+}

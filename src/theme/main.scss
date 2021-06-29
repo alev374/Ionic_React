@@ -1,0 +1,55 @@
+/* 
+  Our styles are implemented in this order...
+  1. Our own Bootstrap override variables (SCSS)
+  2. Bootstrap defaults (SCSS)
+  3. Ionic (CSS)
+  4. Our own overrides. (CSS)
+*/
+
+/* 
+  ####################################
+  1. Our own Bootstrap override variables (SCSS)
+  ####################################
+*/
+@import "_scss_variables.scss";
+
+/* 
+  ####################################
+  2. Bootstrap defaults (SCSS)
+  ####################################
+*/
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Bootstrap utility functions. Sweet.
+@import "~bootstrap/scss/utilities";
+
+/* 
+  ####################################
+  3. Ionic (CSS)
+  ####################################
+*/
+// Core CSS required for Ionic components to work properly
+@import "~@ionic/react/css/core.css";
+
+// Basic CSS for apps built with Ionic
+@import "~@ionic/react/css/normalize.css";
+@import "~@ionic/react/css/structure.css";
+@import "~@ionic/react/css/typography.css";
+
+// Optional CSS utils that can be commented out
+@import "~@ionic/react/css/padding.css";
+@import "~@ionic/react/css/float-elements.css";
+@import "~@ionic/react/css/text-alignment.css";
+@import "~@ionic/react/css/text-transformation.css";
+@import "~@ionic/react/css/flex-utils.css";
+@import "~@ionic/react/css/display.css";
+
+/* 
+  ####################################
+  4. Our own overrides. (CSS)
+  ####################################
+*/
+@import "css_variables";
+@import "nextpay-theme";

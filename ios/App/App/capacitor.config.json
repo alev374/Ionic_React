@@ -1,0 +1,7 @@
+{
+  "appId": "com.nextpay.app",
+  "appName": "nextpay",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build"
+}

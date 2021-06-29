@@ -1,0 +1,87 @@
+@function getRgb($color) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  @return $red + ", " + $green + ", " + $blue;
+}
+
+/*
+  These variables are being used by Ionic. However, the actual color values
+  are defined in scss (_scss_variables.scss)
+*/
+
+/** Ionic CSS Variables **/
+:root {
+  /** primary **/
+  --ion-color-primary: #{$primary};
+  --ion-color-primary-rgb: #{getRgb($primary)};
+  --ion-color-primary-contrast: #{$white};
+  --ion-color-primary-contrast-rgb: #{getRgb($white)};
+  --ion-color-primary-shade: #{$primary-shade};
+  --ion-color-primary-tint: #{$primary-tint};
+
+  /** secondary **/
+  --ion-color-secondary: #{$secondary};
+  --ion-color-secondary-rgb: #{getRgb($secondary)};
+  --ion-color-secondary-contrast: #{$white};
+  --ion-color-secondary-contrast-rgb: #{getRgb($white)};
+  --ion-color-secondary-shade: #{$secondary-shade};
+  --ion-color-secondary-tint: #{$secondary-tint};
+
+  /** tertiary **/
+  --ion-color-tertiary: #{$tertiary};
+  --ion-color-tertiary-rgb: #{getRgb($tertiary)};
+  --ion-color-tertiary-contrast: #{$white};
+  --ion-color-tertiary-contrast-rgb: #{getRgb($white)};
+  --ion-color-tertiary-shade: #{$tertiary-shade};
+  --ion-color-tertiary-tint: #{$tertiary-tint};
+
+  /** success **/
+  --ion-color-success: #{$success};
+  --ion-color-success-rgb: #{getRgb($success)};
+  --ion-color-success-contrast: #{$white};
+  --ion-color-success-contrast-rgb: #{getRgb($white)};
+  --ion-color-success-shade: #{$success-shade};
+  --ion-color-success-tint: #{$success-tint};
+
+  /** warning **/
+  --ion-color-warning: #{$warning};
+  --ion-color-warning-rgb: #{getRgb($warning)};
+  --ion-color-warning-contrast: #{$white};
+  --ion-color-warning-contrast-rgb: #{getRgb($white)};
+  --ion-color-warning-shade: #{$warning-shade};
+  --ion-color-warning-tint: #{$warning-tint};
+
+  /** danger **/
+  --ion-color-danger: #{$danger};
+  --ion-color-danger-rgb: #{getRgb($danger)};
+  --ion-color-danger-contrast: #{$white};
+  --ion-color-danger-contrast-rgb: #{getRgb($white)};
+  --ion-color-danger-shade: #{$danger-shade};
+  --ion-color-danger-tint: #{$danger-tint};
+
+  /** dark **/
+  --ion-color-dark: #{$dark};
+  --ion-color-dark-rgb: #{getRgb($dark)};
+  --ion-color-dark-contrast: #{$white};
+  --ion-color-dark-contrast-rgb: #{getRgb($white)};
+  --ion-color-dark-shade: #{$dark-shade};
+  --ion-color-dark-tint: #{$dark-tint};
+
+  /** medium **/
+  --ion-color-medium: #{$medium};
+  --ion-color-medium-rgb: #{getRgb($medium)};
+  --ion-color-medium-contrast: #{$white};
+  --ion-color-medium-contrast-rgb: #{getRgb($white)};
+  --ion-color-medium-shade: #{$medium-shade};
+  --ion-color-medium-tint: #{$medium-tint};
+
+  /** light **/
+  --ion-color-light: #{$light};
+  --ion-color-light-rgb: #{getRgb($light)};
+  --ion-color-light-contrast: #{$white};
+  --ion-color-light-contrast-rgb: #{getRgb($white)};
+  --ion-color-light-shade: #{$light-shade};
+  --ion-color-light-tint: #{$light-tint};
+}
